@@ -123,8 +123,8 @@ a {
   &__title {
     display: block;
     max-width: 540px;
-    padding-top: 130px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     font-size: 32px;
     font-weight: bold;
     color: #fff;
@@ -136,7 +136,7 @@ a {
   &__subtitle {
     display: block;
     max-width: 390px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     font-size: 24px;
     font-weight: 300;
     color: #fff;
@@ -197,8 +197,51 @@ a {
   color: $dark-font;
 }
 
-
-
+/*About--------*/
+.about {
+  min-height: 600px;
+  padding: 100px 0;
+  background: transparent url(../img/about/about__bg.jpg) center no-repeat;
+  &__text {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 80px;
+    color: #fff;
+    text-align: center;
+  }
+  .counter {
+    margin-top: 80px;
+    padding: 0 45px;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &__item {
+      width: 190px;
+      text-align: center;
+    }
+    &__amount {
+      font-size: 48px;
+      font-weight: bold;
+      color: #fff;
+      span {
+        font-size: 32px;
+        margin-right: 5px;
+      }
+    }
+    &__text {
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+ 
+}
 
 
 

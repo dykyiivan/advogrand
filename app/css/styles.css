@@ -258,8 +258,8 @@ a:hover {
 .hero__title {
   display: block;
   max-width: 540px;
-  padding-top: 130px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   font-size: 32px;
   font-weight: bold;
   color: #fff;
@@ -273,7 +273,7 @@ a:hover {
 .hero__subtitle {
   display: block;
   max-width: 390px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   font-size: 24px;
   font-weight: 300;
   color: #fff;
@@ -349,6 +349,62 @@ a:hover {
   font-size: 30px;
   font-weight: bold;
   color: #1c1c1c;
+}
+
+/*About--------*/
+.about {
+  min-height: 600px;
+  padding: 100px 0;
+  background: transparent url(../img/about/about__bg.jpg) center no-repeat;
+}
+
+.about__text {
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+}
+
+.about__title {
+  margin-bottom: 80px;
+  color: #fff;
+  text-align: center;
+}
+
+.about .counter {
+  margin-top: 80px;
+  padding: 0 45px;
+}
+
+.about .counter__inner {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  align-items: flex-start;
+}
+
+.about .counter__item {
+  width: 190px;
+  text-align: center;
+}
+
+.about .counter__amount {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.about .counter__amount span {
+  font-size: 32px;
+  margin-right: 5px;
+}
+
+.about .counter__text {
+  font-size: 16px;
+  color: #fff;
 }
 
 @media (max-width: 1200px) {
