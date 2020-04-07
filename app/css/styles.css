@@ -158,6 +158,10 @@ a:hover {
   font-size: 14px;
 }
 
+.header__phone--big {
+  font-size: 18px;
+}
+
 .header .menu__list {
   display: -webkit-box;
   display: flex;
@@ -206,6 +210,43 @@ a:hover {
 
 .header .button:hover {
   background: #a70a0a;
+}
+
+.header-bottom .container {
+  min-height: 80px;
+}
+
+.header-right {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.header-right .apps-link {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e42626;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.header-right .apps-link:hover {
+  border: 3px solid #e42626;
+}
+
+.header-right .google-play {
+  margin-right: 10px;
+  margin-left: 30px;
 }
 
 @media (max-width: 1200px) {

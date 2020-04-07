@@ -37,9 +37,13 @@ a {
     &:hover {
       text-decoration: underline;
     }
+    
   }
   &__phone {
     font-size: 14px;
+    &--big {
+      font-size: 18px;
+    }
   }
   .menu {
     &__list {
@@ -81,6 +85,34 @@ a {
     &:hover {
       background: #a70a0a;
     }
+  }
+  &-bottom {
+    .container {
+      min-height: 80px;
+    }
+  }
+  &-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .apps-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 38px;
+      height: 38px;
+      border: 1px solid #e42626;
+      border-radius: 5px;
+      transition: all .5s ease;
+      &:hover {
+        border: 3px solid #e42626;
+      }
+    }
+    .google-play {
+      margin-right: 10px;
+      margin-left: 30px;
+    }
+
   }
 }
 
