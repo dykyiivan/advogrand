@@ -74,14 +74,6 @@ a {
     padding: 10px 20px;
     font-size: 12px;
     background-color: #c91111;
-  }
-  .button {
-    font-weight: bold;
-    color: #fff;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: all .6s ease;
     &:hover {
       background: #a70a0a;
     }
@@ -115,9 +107,54 @@ a {
 
   }
 }
+.button {
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all .6s ease;
+  }
 
-
-
+/*Hero------------*/
+.hero {
+  min-height: 610px;
+  background: transparent url(../img/header/hero__bg.jpg) center no-repeat;
+  &__title {
+    display: block;
+    max-width: 540px;
+    padding-top: 130px;
+    padding-bottom: 60px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    span {
+      font-size: 40px;
+      text-transform: uppercase;
+    }
+  }
+  &__subtitle {
+    display: block;
+    max-width: 390px;
+    margin-bottom: 70px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    span {
+      font-weight: bold;
+    }
+  }
+  &__button {
+    padding: 25px 45px;
+    font-size: 18px;
+    background: rgb(228,38,38);
+    background: linear-gradient(0deg, rgba(228,38,38,1) 0%, rgba(194,11,11,1) 100%);
+    transition: all .5s ease;
+    &:hover {
+      background: linear-gradient(0deg, rgb(180, 26, 26) 0%, rgb(180, 3, 3) 100%);
+    }
+  }
+}
 
 
 

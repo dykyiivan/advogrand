@@ -198,17 +198,7 @@ a:hover {
   background-color: #c91111;
 }
 
-.header .button {
-  font-weight: bold;
-  color: #fff;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: all .6s ease;
-  transition: all .6s ease;
-}
-
-.header .button:hover {
+.header__button:hover {
   background: #a70a0a;
 }
 
@@ -247,6 +237,65 @@ a:hover {
 .header-right .google-play {
   margin-right: 10px;
   margin-left: 30px;
+}
+
+.button {
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+/*Hero------------*/
+.hero {
+  min-height: 610px;
+  background: transparent url(../img/header/hero__bg.jpg) center no-repeat;
+}
+
+.hero__title {
+  display: block;
+  max-width: 540px;
+  padding-top: 130px;
+  padding-bottom: 60px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hero__title span {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.hero__subtitle {
+  display: block;
+  max-width: 390px;
+  margin-bottom: 70px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.hero__subtitle span {
+  font-weight: bold;
+}
+
+.hero__button {
+  padding: 25px 45px;
+  font-size: 18px;
+  background: #e42626;
+  background: -webkit-linear-gradient(bottom, #e42626 0%, #c20b0b 100%);
+  background: linear-gradient(0deg, #e42626 0%, #c20b0b 100%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.hero__button:hover {
+  background: -webkit-linear-gradient(bottom, #b41a1a 0%, #b40303 100%);
+  background: linear-gradient(0deg, #b41a1a 0%, #b40303 100%);
 }
 
 @media (max-width: 1200px) {
