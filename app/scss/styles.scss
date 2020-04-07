@@ -13,6 +13,80 @@ body {
   max-width: 940px;
   margin: 0 auto;
 }
+a {
+  transition: all .5s ease;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+/*Header------------*/
+.header {
+  &-top {
+    border-bottom: 1px solid #f4f4f4;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+  }
+  .phone {
+    font-weight: bold;
+    color: $dark-font;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__phone {
+    font-size: 14px;
+  }
+  .menu {
+    &__list {
+      display: flex;
+    }
+    &__item {
+      margin-right: 14px;
+      margin-left: 14px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    &__link {
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      color: $dark-font;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__button {
+    padding: 10px 20px;
+    font-size: 12px;
+    background-color: #c91111;
+  }
+  .button {
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all .6s ease;
+    &:hover {
+      background: #a70a0a;
+    }
+  }
+}
+
+
+
+
 
 
 
