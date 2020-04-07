@@ -1,1 +1,1 @@
-# theme_scss_starter_
+# advogrand theme
