@@ -298,6 +298,59 @@ a:hover {
   background: linear-gradient(0deg, #b41a1a 0%, #b40303 100%);
 }
 
+/*Services--------*/
+.services {
+  padding-top: 100px;
+  padding-bottom: 35px;
+  background-color: #fff;
+}
+
+.services__title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.services__inner {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.services__item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  width: 310px;
+  padding: 0 30px;
+  margin-bottom: 70px;
+}
+
+.services__img {
+  margin-right: 20px;
+}
+
+.services__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1c1c1c;
+  cursor: pointer;
+}
+
+.services__subtitle:hover {
+  color: #e61010;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1c1c1c;
+}
+
 @media (max-width: 1200px) {
   body {
     background-color: #ccc;
