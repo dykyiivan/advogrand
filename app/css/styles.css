@@ -458,8 +458,219 @@ a:hover {
   margin-bottom: 60px;
 }
 
-@media (max-width: 1200px) {
-  body {
-    background-color: #ccc;
-  }
+/*Avantages--------*/
+.advantages {
+  padding: 100px 0;
+}
+
+.advantages__title {
+  margin-bottom: 80px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.advantages__inner {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  align-items: flex-start;
+}
+
+.advantages__item--small {
+  padding-top: 90px;
+  text-align: right;
+}
+
+.advantages__item--medium {
+  width: 210px;
+  padding-top: 30px;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+
+.advantages__item--large {
+  display: -webkit-box;
+  display: flex;
+  min-height: 361px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.advantages__item--large ul {
+  margin-left: 45px;
+}
+
+.advantages__item--large ul li {
+  position: relative;
+}
+
+.advantages__item--large ul li:nth-child(1)::before {
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  display: block;
+  height: 25px;
+  width: 23px;
+  background: transparent url(../img/advantages/advantages__icon1.png) center no-repeat;
+  content: "";
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.advantages__item--large ul li:nth-child(2)::before {
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  display: block;
+  height: 25px;
+  width: 20px;
+  background: transparent url(../img/advantages/advantages__icon2.png) center no-repeat;
+  content: "";
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.advantages__item--large ul li:nth-child(3)::before {
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  display: block;
+  height: 25px;
+  width: 22px;
+  background: transparent url(../img/advantages/advantages__icon3.png) center no-repeat;
+  content: "";
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.advantages__item--large ul li:nth-child(4)::before {
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  display: block;
+  height: 25px;
+  width: 23px;
+  background: transparent url(../img/advantages/advantages__icon4.png) center no-repeat;
+  content: "";
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.advantages__item--green {
+  background: #26b83a;
+  border: 1px solid #26b83a;
+}
+
+.advantages__item--green ul li {
+  color: #fff;
+}
+
+.advantages__item--green h3 {
+  color: #fff;
+}
+
+.advantages__subtitle {
+  margin-bottom: 35px;
+}
+
+.advantages__heading {
+  margin-bottom: 35px;
+  font-size: 13px;
+  color: #000;
+}
+
+.advantages__button {
+  width: 300px;
+  padding: 25px 45px;
+  font-size: 18px;
+  background: #e42626;
+  background: -webkit-linear-gradient(bottom, #e42626 0%, #c20b0b 100%);
+  background: linear-gradient(0deg, #e42626 0%, #c20b0b 100%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.advantages__button:hover {
+  background: -webkit-linear-gradient(bottom, #b41a1a 0%, #b40303 100%);
+  background: linear-gradient(0deg, #b41a1a 0%, #b40303 100%);
+}
+
+/*Consultation--------*/
+.consultation {
+  min-height: 470px;
+  padding: 100px 0;
+  background: transparent url(../img/consultation/consultation__bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.consultation__inner {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.consultation__text {
+  max-width: 550px;
+}
+
+.consultation__title {
+  margin-bottom: 70px;
+  color: #fff;
+}
+
+.consultation__list {
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  counter-reset: item;
+}
+
+.consultation__item {
+  position: relative;
+  margin-bottom: 30px;
+  counter-increment: item;
+}
+
+.consultation__item span {
+  text-decoration: underline;
+}
+
+.consultation__item:before {
+  position: absolute;
+  left: -35px;
+  color: #e41e1e;
+  text-align: center;
+  content: counter(item) ".";
+}
+
+.consultation ol.consultation__list {
+  margin-left: 35px;
+}
+
+.apps {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-right: 50px;
+}
+
+.apps__link {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
