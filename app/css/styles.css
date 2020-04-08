@@ -353,7 +353,7 @@ a:hover {
 
 /*About--------*/
 .about {
-  min-height: 600px;
+  height: 600px;
   padding: 100px 0;
   background: transparent url(../img/about/about__bg.jpg) center no-repeat;
 }
@@ -367,7 +367,7 @@ a:hover {
 }
 
 .about__title {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   color: #fff;
   text-align: center;
 }
@@ -405,6 +405,57 @@ a:hover {
 .about .counter__text {
   font-size: 16px;
   color: #fff;
+}
+
+/*Scheme--------*/
+.scheme {
+  padding: 100px 0;
+  background: #f5f5f5;
+}
+
+.scheme__title {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.scheme__inner {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.scheme__item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 310px;
+}
+
+.scheme__subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  color: #1c1c1c;
+  text-align: center;
+}
+
+.scheme__subtitle--bold {
+  font-weight: bold;
+}
+
+.scheme__img {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 90px;
+  margin-bottom: 60px;
 }
 
 @media (max-width: 1200px) {
