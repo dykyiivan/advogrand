@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8">
@@ -10,6 +10,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="img/favicon/site.webmanifest">
+  <!-- Slick Css -->
+  <link rel="stylesheet" href="css/slick.css">
+  <!-- Main Css -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -246,18 +249,87 @@
   <section class="reviews">
     <div class="container">
       <h2 class="reviews__title title">Відгуки</h2>
-      <div class="reviews__inner">
-        <div class="reviews__item">
-          <img src="" alt="#" class="reviews__img">
-          <h3 class="reviews__subtitle">Довга назва відгуки</h3>
+      <div class="reviews__navigations">
+        <ul class="reviews__list">
+          <li class="reviews__item" data-filter="all">Всі</li> <!--reviews__item--active-->
+          <li class="reviews__item" data-filter="health">Охорона здоров'я</li>
+          <li class="reviews__item" data-filter="business">Бізнес</li>
+          <li class="reviews__item" data-filter="family">Сім'я</li>
+          <li class="reviews__item" data-filter="gkh">ЖКГ</li>
+          <li class="reviews__item" data-filter="real-estate">Нерухомість</li>
+        </ul>
+      </div>
+      <div class="reviews__inner filtr-container">
+        <div class="reviews__item" data-category="health">
+          <video class="video__item" src="video/video.mp4" width="300" height="210" controls poster="video/video__img.jpg">
+          Ваш веб-переглядач не підтримує відеотег</video>
+          <h3 class="reviews__subtitle">Довга назва відгуки </h3>
+        </div>
+        <div class="reviews__item" data-category="business">
+          <video class="video__item" src="video/video.mp4" width="300" height="210" controls poster="video/video__img1.jpg">
+          Ваш веб-переглядач не підтримує відеотег</video>
+          <h3 class="reviews__subtitle">Довга назва відгуки 1</h3>
+        </div>
+        <div class="reviews__item" data-category="family">
+          <video class="video__item" src="video/video.mp4" controls  width="300" height="210" poster="video/video__img2.jpg">
+          Ваш веб-переглядач не підтримує відеотег</video>
+          <h3 class="reviews__subtitle">Довга назва відгуки 2</h3>
+        </div>
+        <div class="reviews__item" data-category="gkh">
+          <video class="video__item" src="video/video.mp4" controls width="300" height="210" poster="video/video__img3.jpg">
+          Ваш веб-переглядач не підтримує відеотег</video>
+          <h3 class="reviews__subtitle">Довга назва відгуки 3</h3>
+        </div>
+        <div class="reviews__item" data-category="real-estate">
+          <video class="video__item" src="video/video.mp4" controls width="300" height="210" poster="video/video__img4.jpg">
+          Ваш веб-переглядач не підтримує відеотег</video>
+          <h3 class="reviews__subtitle">Довга назва відгуки 4</h3>
+        </div>
+        <div class="reviews__item" data-category="real-estate">
+          <video class="video__item" src="video/video.mp4" controls width="300" height="210" poster="video/video__img5.jpg">
+          Ваш веб-переглядач не підтримує відеотег</video>
+          
+          <h3 class="reviews__subtitle">Довга назва відгуки 5</h3>
         </div>
       </div>
     </div>
   </section>
   <!-- /.reviews -->
 
+  <section class="partners">
+    <div class="container">
+      <h2 class="partners__title title">Партнери Advogrand</h2>
+      <div class="partners__slider">
+        <div class="partners__item">
+          <img src="http://via.placeholder.com/200x120" alt="#" class="partners__img">
+          <div class="partners__body">Річард Макклінток, професор латини з коледжу Хемпдін-Сидні, що у Вірджінії, вивчав одне з найменш зрозумілих латинських слів - consectetur</div>
+        </div>
+        <div class="partners__item">
+          <img src="http://via.placeholder.com/200x120" alt="#" class="partners__img">
+          <div class="partners__body">Класичний текст, використовуваний з XVI сторіччя, наведено нижче для всіх зацікавлених. Також точно за оригіналом наведено розділи 1.10.32 та 1.10.33 цицеронівського "de Finibus Bonorum et Malorum"</div>
+        </div>
+        <div class="partners__item">
+          <img src="http://via.placeholder.com/200x120" alt="#" class="partners__img">
+          <div class="partners__body">Він використовує словник з більш як 200 слів латини та цілий набір моделей речень - це дозволяє генерувати Lorem Ipsum</div>
+        </div>
+        <div class="partners__item">
+          <img src="http://via.placeholder.com/200x120" alt="#" class="partners__img">
+          <div class="partners__body">«Глобекст» - комерційний банк. Заснований в 1992 році. У 2012 році банк «Глобекст» увійшов до щорічного рейтингу надійності Forbes. Банк потрапив в групу «Висока надійність», зайнявши 30-е місце з рейтингом 4 бали з 5-ти</div>
+        </div>
+        <div class="partners__item">
+          <img src="http://via.placeholder.com/200x120" alt="#" class="partners__img">
+          <div class="partners__body">Існує багато варіацій уривків з Lorem Ipsum, але більшість з них зазнала певних змін на кшталт жартівливих вставок або змішування слів, які навіть не виглядають правдоподібно.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.partners -->
 
 
+  <!-- Jquery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Slick -->
+  <script src="js/slick.min.js"></script>
   <!-- Main JS -->
   <script src="js/main.js"></script>
 </body>

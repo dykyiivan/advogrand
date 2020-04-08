@@ -674,3 +674,165 @@ a:hover {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+/*Reviews--------*/
+.reviews {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.reviews__title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.reviews__navigations {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.reviews__list {
+  display: -webkit-box;
+  display: flex;
+}
+
+.reviews__list li {
+  padding: 10px 15px 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.reviews__list li:hover {
+  color: #e61010;
+  cursor: pointer;
+}
+
+.reviews__inner {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.reviews__item {
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+
+.reviews__img {
+  margin-bottom: 18px;
+}
+
+.reviews__subtitle {
+  font-size: 13px;
+  font-weight: 300;
+  color: #313131;
+}
+
+.reviews__subtitle:hover {
+  color: #e61010;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.reviews__item--active {
+  border: 1px solid #e61010;
+  border-radius: 5px;
+  color: #e61010;
+}
+
+.video__item {
+  max-width: 300px;
+}
+
+.hide {
+  display: none;
+}
+
+.partners {
+  padding: 100px 0 80px;
+}
+
+.partners__title {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.partners__slider {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.partners__item {
+  position: relative;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.partners__slider {
+  position: relative;
+}
+
+.partners__body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 200px;
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+  background: #26b83a;
+  text-align: center;
+  opacity: 0;
+}
+
+.partners__item.slick-slide.slick-active:hover .partners__body {
+  opacity: 1;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.slick-list.draggable {
+  padding: 20px 0;
+}
+
+.partners__slider .slick-prev img {
+  width: 20px;
+  height: 14px;
+}
+
+.partners__slider .slick-next img {
+  width: 20px;
+  height: 14px;
+}
+
+.partners__slider .slick-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: -66px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.partners__slider .slick-prev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: -66px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
