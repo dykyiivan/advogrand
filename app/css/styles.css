@@ -402,9 +402,10 @@ a:hover {
 
 /*About--------*/
 .about {
-  height: 600px;
+  min-height: 600px;
   padding: 100px 0;
   background: transparent url(../img/about/about__bg.jpg) center no-repeat;
+  background-size: cover;
 }
 
 .about__text {
@@ -746,6 +747,7 @@ a:hover {
 .reviews__list {
   display: -webkit-box;
   display: flex;
+  margin-bottom: 50px;
 }
 
 .reviews__list li {
@@ -768,11 +770,6 @@ a:hover {
   justify-content: center;
 }
 
-.reviews__item {
-  margin-right: 10px;
-  margin-bottom: 50px;
-}
-
 .reviews__img {
   margin-bottom: 18px;
 }
@@ -789,10 +786,19 @@ a:hover {
   text-decoration: underline;
 }
 
+.reviews__item {
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+
 .reviews__item--active {
   border: 1px solid #e61010;
   border-radius: 5px;
   color: #e61010;
+}
+
+ul.reviews__list {
+  margin-bottom: 50px;
 }
 
 .video__item {
@@ -1063,7 +1069,7 @@ ul.tariff-package__list span {
   margin-top: 0;
 }
 
-.contact .form {
+.form {
   max-width: 400px;
   width: 100%;
   padding: 70px 80px 70px 0;
@@ -1071,19 +1077,19 @@ ul.tariff-package__list span {
   order: 0;
 }
 
-.contact .form__title {
+.form__title {
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: bold;
   line-height: 23px;
 }
 
-.contact .form__label {
+.form__label {
   font-size: 14px;
   font-weight: 300;
 }
 
-.contact .form__input {
+.form__input {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -1095,7 +1101,7 @@ ul.tariff-package__list span {
   border-radius: 5px;
 }
 
-.contact .form__textarea {
+.form__textarea {
   width: 100%;
   height: 78px;
   margin-top: 10px;
@@ -1105,7 +1111,7 @@ ul.tariff-package__list span {
   resize: none;
 }
 
-.contact .form__button {
+.form__button {
   width: 100%;
   padding: 25px 20px;
   font-size: 18px;
@@ -1116,12 +1122,12 @@ ul.tariff-package__list span {
   transition: all .5s ease;
 }
 
-.contact .form__button:hover {
+.form__button:hover {
   background: -webkit-linear-gradient(bottom, #b41a1a 0%, #b40303 100%);
   background: linear-gradient(0deg, #b41a1a 0%, #b40303 100%);
 }
 
-.contact .form__text {
+.form__text {
   display: block;
   margin-top: 10px;
   font-size: 13px;
@@ -1157,4 +1163,241 @@ ul.tariff-package__list span {
 
 .footer__text a:hover {
   text-decoration: none;
+}
+
+/*Overlay & Modal -----------*/
+.overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.form__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 470px;
+  width: 100%;
+  min-height: 550px;
+  padding: 15px 70px;
+  background: #fff;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.form__modal .form__close {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  font-size: 36px;
+  color: #000000;
+  cursor: pointer;
+  z-index: 999999;
+}
+
+#question,
+#call,
+.overlay {
+  display: none;
+}
+
+#call .form__modal {
+  min-height: 430px;
+}
+
+.header__burger {
+  position: relative;
+  display: none;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.header__burger span {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.header__burger:before, .header__burger:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  content: "";
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.header__burger:before {
+  top: 0;
+}
+
+.header__burger:after {
+  bottom: 0;
+}
+
+.header__burger.active:before {
+  top: 9px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.header__burger.active:after {
+  bottom: 9px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.header__burger.active span {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    padding: 0 10px;
+  }
+  .menu {
+    position: absolute;
+    background: #c91111;
+    top: -100%;
+    width: 100%;
+  }
+  .menu.active {
+    top: 50px;
+  }
+  .header .menu__list {
+    display: block;
+  }
+  .header .menu__item {
+    margin: 0;
+    padding: 10px 15px;
+  }
+  .header .menu__link {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .header__inner {
+    justify-content: space-around;
+  }
+  .header__burger {
+    display: block;
+  }
+  .header__phone--big {
+    font-size: 14px;
+  }
+  .services__inner {
+    justify-content: space-around;
+  }
+  .about .counter {
+    margin-top: 40px;
+    padding: 0;
+  }
+  .about .counter__item {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .advantages__inner {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .advantages__item {
+    margin-bottom: 50px;
+  }
+  .consultation__inner {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .consultation__text {
+    max-width: 100%;
+  }
+  .apps {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header__text {
+    display: none;
+  }
+  .about .counter__inner {
+    display: block;
+  }
+  .about .counter__amount {
+    font-size: 38px;
+  }
+  .scheme__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  .scheme__item {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .advantages__item--medium {
+    width: 100%;
+  }
+  .advantages__item--small {
+    padding-top: 0;
+  }
+  .reviews__list li {
+    font-size: 13px;
+  }
+  .reviews__list {
+    display: block;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header__phone--big {
+    display: none;
+  }
+  .hero__title {
+    max-width: 100%;
+    font-size: 26px;
+  }
+  .hero__title span {
+    font-size: 36px;
+  }
+  .hero__subtitle {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .reviews__item {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .header__phone {
+    display: none;
+  }
+  .hero__title {
+    max-width: 100%;
+    font-size: 18px;
+  }
+  .hero__title span {
+    font-size: 21px;
+  }
+  .hero__button {
+    font-size: 14px;
+  }
 }

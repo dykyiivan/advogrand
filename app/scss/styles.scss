@@ -38,9 +38,12 @@ a {
       font-size: 18px;
     }
   }
-  .menu {
+  
+
+.menu {
     &__list {
       display: flex;
+     
     }
     &__item {
       margin-right: 14px;
@@ -241,9 +244,10 @@ a {
 
 /*About--------*/
 .about {
-  height: 600px;
+  min-height: 600px;
   padding: 100px 0;
   background: transparent url(../img/about/about__bg.jpg) center no-repeat;
+  background-size: cover;
   &__text {
     margin-bottom: 30px;
     font-size: 16px;
@@ -504,6 +508,7 @@ a {
   }
   &__list {
     display: flex;
+    margin-bottom: 50px;
     li {
       padding: 10px 15px 8px;
       font-weight: 500;
@@ -520,10 +525,6 @@ a {
     flex-wrap: wrap;
     justify-content: center;
   }
-  &__item {
-    margin-right: 10px;
-    margin-bottom: 50px;
-  }
   &__img {
     margin-bottom: 18px;
   }
@@ -538,6 +539,8 @@ a {
     }
   }
   &__item {
+    margin-right: 10px;
+    margin-bottom: 50px;
     &--active {
         border: 1px solid $link-hover;
         border-radius: 5px;
@@ -545,6 +548,9 @@ a {
       }
     }
    
+}
+ul.reviews__list {
+  margin-bottom: 50px;
 }
 .video__item {
   max-width: 300px;
@@ -757,7 +763,9 @@ ul.tariff-package__list {
       margin-top: 0;
     }
   }
-  .form {
+ 
+}
+ .form {
     max-width: 400px;
     width: 100%;
     padding: 70px 80px 70px 0;
@@ -811,7 +819,6 @@ ul.tariff-package__list {
       text-align: center;
     }
   }
-}
 
 /*Footer-----------*/
 .footer {
@@ -836,8 +843,85 @@ ul.tariff-package__list {
   }
 }
 
-
-
+/*Overlay & Modal -----------*/
+.overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.form__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 470px;
+  width: 100%;
+  min-height: 550px;
+  padding: 15px 70px;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  .form__close {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    font-size: 36px;
+    color: #000000;
+    cursor: pointer;
+    z-index: 999999;
+  }
+}
+#question,
+#call,
+.overlay {
+  display: none;
+}
+#call .form__modal {
+  min-height: 430px;
+}
+.header__burger {
+    position: relative;
+    display: none;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    span {
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: $font-color;
+      transition: all 0.4s ease;
+    }
+    &:before,
+    &:after {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: $font-color;
+      content: "";
+      transition: all 0.4s ease;
+    }
+    &:before {
+      top: 0;
+    }
+    &:after {
+      bottom: 0;
+    }
+    &.active:before {
+      top: 9px;
+      transform: rotate(45deg);
+    }
+    &.active:after {
+      bottom: 9px;
+      transform: rotate(-45deg)
+    }
+    &.active span {
+      display: none;
+    }
+}
 
 
 

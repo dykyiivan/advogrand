@@ -33,4 +33,10 @@ $(function(){
     nextArrow: '<button type="button" class="slick-next"><img src="img/partners/left.png"></button>',
   });
 
+
+  // Mobile Menu 
+  $(".header__burger").click(function(e) {
+    $(".header__burger, .menu").toggleClass("active");
+  });
+
 });
