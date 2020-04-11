@@ -554,6 +554,7 @@ ul.reviews__list {
 }
 .video__item {
   max-width: 300px;
+  object-fit: cover;
 }
 .hide {
   display: none;
@@ -722,10 +723,10 @@ ul.tariff-package__list {
     &:after {
       position: absolute;
       top: 0;
-      right: -100%;
+      right: -150%;
       display: block;
       height: 100%;
-      width: 100%;
+      width: 150%;
       background: #fff;
       content: "";
     }

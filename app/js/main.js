@@ -31,6 +31,32 @@ $(function(){
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="slick-prev"><img src="img/partners/right.png"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="img/partners/left.png"></button>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
 

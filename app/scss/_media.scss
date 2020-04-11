@@ -70,6 +70,15 @@
   .apps {
     padding-right: 0;
   }
+  .contact__inner {
+    flex-wrap: wrap;
+  }
+  .contact__body {
+    padding-left: 30px;
+  }
+  .form {
+    padding-right: 15px;
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -103,6 +112,36 @@
   .reviews__list {
     display: block;
   }
+  .tariff__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tariff-package {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .tariff-package__img {
+    margin: auto;
+  }
+  .tariff {
+    padding-bottom: 50px;
+  }
+  .contact__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__body {
+    width: 100%;
+  }
+  .contact__body:after {
+    display: none;
+  }
+  .form {
+    padding-right: 0;
+    padding-bottom: 30px;
+    max-width: 100px;
+  }
 }
 
 
@@ -126,6 +165,13 @@
   }
   .reviews__item {
     margin-right: 0;
+  }
+  .form__button {
+    font-size: 14px;
+  }
+  .footer__container {
+    flex-direction: column;
+    justify-content: space-around;
   }
  }
 
