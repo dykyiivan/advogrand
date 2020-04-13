@@ -301,7 +301,6 @@ a:hover {
 /*Hero------------*/
 .hero {
   min-height: 610px;
-  background: transparent url(../img/header/hero__bg.jpg) center no-repeat;
 }
 
 .hero__title {
@@ -404,7 +403,6 @@ a:hover {
 .about {
   min-height: 600px;
   padding: 100px 0;
-  background: transparent url(../img/about/about__bg.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -441,15 +439,16 @@ a:hover {
   text-align: center;
 }
 
-.about .counter__amount {
-  font-size: 48px;
-  font-weight: bold;
+.about .counter__item span {
+  font-size: 16px;
   color: #fff;
 }
 
-.about .counter__amount span {
-  font-size: 32px;
-  margin-right: 5px;
+.about .counter__amount {
+  margin-top: 0;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .about .counter__text {
@@ -658,7 +657,6 @@ a:hover {
 .consultation {
   min-height: 470px;
   padding: 100px 0;
-  background: transparent url(../img/consultation/consultation__bg.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -803,6 +801,8 @@ ul.reviews__list {
 
 .video__item {
   max-width: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .hide {
@@ -1084,6 +1084,10 @@ ul.tariff-package__list span {
   line-height: 23px;
 }
 
+.form__subtitle {
+  margin-bottom: 30px;
+}
+
 .form__label {
   font-size: 14px;
   font-weight: 300;
@@ -1106,6 +1110,7 @@ ul.tariff-package__list span {
   height: 78px;
   margin-top: 10px;
   margin-bottom: 30px;
+  padding: 13px 10px;
   border: 1px solid #dddddd;
   border-radius: 5px;
   resize: none;
@@ -1180,7 +1185,6 @@ ul.tariff-package__list span {
   left: 50%;
   max-width: 470px;
   width: 100%;
-  min-height: 550px;
   padding: 15px 70px;
   background: #fff;
   -webkit-transform: translate(-50%, -50%);
@@ -1262,6 +1266,14 @@ ul.tariff-package__list span {
 
 .header__burger.active span {
   display: none;
+}
+
+.error {
+  color: #e61010;
+}
+
+input.error {
+  border: 1px solid #e61010;
 }
 
 @media (max-width: 991.98px) {
@@ -1400,13 +1412,10 @@ ul.tariff-package__list span {
   .contact__body {
     width: 100%;
   }
-  .contact__body:after {
-    display: none;
-  }
   .form {
     padding-right: 0;
     padding-bottom: 30px;
-    max-width: 100px;
+    max-width: 90%;
   }
 }
 

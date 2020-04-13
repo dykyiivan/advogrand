@@ -164,7 +164,6 @@ a {
 /*Hero------------*/
 .hero {
   min-height: 610px;
-  background: transparent url(../img/header/hero__bg.jpg) center no-repeat;
   &__title {
     display: block;
     max-width: 540px;
@@ -246,7 +245,6 @@ a {
 .about {
   min-height: 600px;
   padding: 100px 0;
-  background: transparent url(../img/about/about__bg.jpg) center no-repeat;
   background-size: cover;
   &__text {
     margin-bottom: 30px;
@@ -271,15 +269,16 @@ a {
     &__item {
       width: 190px;
       text-align: center;
+      span {
+        font-size: 16px;
+        color: #fff;
+      }
     }
     &__amount {
+      margin-top: 0;
       font-size: 48px;
       font-weight: bold;
       color: #fff;
-      span {
-        font-size: 32px;
-        margin-right: 5px;
-      }
     }
     &__text {
       font-size: 16px;
@@ -441,7 +440,6 @@ a {
 .consultation {
   min-height: 470px;
   padding: 100px 0;
-  background: transparent url(../img/consultation/consultation__bg.jpg) center no-repeat;
   background-size: cover;
   &__inner {
     display: flex;
@@ -777,6 +775,9 @@ ul.tariff-package__list {
       font-weight: bold;
       line-height: 23px;
     }
+    &__subtitle {
+      margin-bottom: 30px;
+    }
     &__label {
       font-size: 14px;
       font-weight: 300;
@@ -797,6 +798,7 @@ ul.tariff-package__list {
       height: 78px;
       margin-top: 10px;
       margin-bottom: 30px;
+      padding: 13px 10px;
       border: 1px solid #dddddd;
       border-radius: 5px;
       resize: none;
@@ -858,7 +860,6 @@ ul.tariff-package__list {
   left: 50%;
   max-width: 470px;
   width: 100%;
-  min-height: 550px;
   padding: 15px 70px;
   background: #fff;
   transform: translate(-50%, -50%);
@@ -923,8 +924,12 @@ ul.tariff-package__list {
       display: none;
     }
 }
-
-
+.error {
+  color: $link-hover;
+}
+input.error {
+  border: 1px solid $link-hover;
+}
 
 // Media Queries
 @import"media";

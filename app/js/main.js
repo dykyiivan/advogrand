@@ -1,6 +1,6 @@
 $(function(){
 
-  //Filter Tasbs
+  //Filter Tabs
   let filter = $("[data-filter]");
 
   filter.on("click", function(event) {
@@ -59,10 +59,56 @@ $(function(){
     ]
   });
 
-
   // Mobile Menu 
-  $(".header__burger").click(function(e) {
+  $(".header__burger").on("click", function(e) {
     $(".header__burger, .menu").toggleClass("active");
   });
+
+  // Counter 
+  $(".counter__amount").counterUp({
+    delay: 5,
+    time: 500
+  });
+
+  // Modal 
+  $("[data-modal=consultation]").on("click", function() {
+    $(".overlay, #consultation").fadeIn(700);
+  });
+
+  $(".form__close").on("click", function() {
+    $(".overlay, #consultation, #order").fadeOut(700);
+  });
+
+  $("[data-modal=order]").each(function(i) {
+    $(this).on("click", function() {
+        $("#order .form__subtitle").text($(".tariff-package__title").eq(i).text());
+        $(".overlay, #order").fadeIn(700);
+      })
+  });
+
+  // Validate Form 
+
+  function validateForms(form) {
+    $(form).validate({
+      rules: {
+        phone: {
+          required: true
+        },
+        name: {
+          required: true
+        },
+      },
+      messages: {
+        name: "Неохідно ввести Ваше ім'я",
+        phone: "Неохідно ввести номер телефону"
+      },
+    });
+  }
+ validateForms("#consultation");
+ validateForms("#order");
+
+  //Mask for Phone input
+  $("input[name=phone]").mask("+38 (999) 99-9999-99");
+
 
 });
