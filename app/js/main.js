@@ -70,7 +70,7 @@ $(function(){
     time: 500
   });
 
-  // Modal 
+  //Modal 
   $("[data-modal=consultation]").on("click", function() {
     $(".overlay, #consultation").fadeIn(700);
   });
@@ -87,7 +87,6 @@ $(function(){
   });
 
   // Validate Form 
-
   function validateForms(form) {
     $(form).validate({
       rules: {
@@ -106,9 +105,9 @@ $(function(){
   }
  validateForms("#consultation");
  validateForms("#order");
+  validateForms("#contact__form");
 
   //Mask for Phone input
   $("input[name=phone]").mask("+38 (999) 99-9999-99");
-
-
+ 
 });

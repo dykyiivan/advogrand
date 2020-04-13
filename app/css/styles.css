@@ -1183,9 +1183,8 @@ ul.tariff-package__list span {
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 470px;
   width: 100%;
-  padding: 15px 70px;
+  padding: 15px;
   background: #fff;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -1416,6 +1415,10 @@ input.error {
     padding-right: 0;
     padding-bottom: 30px;
     max-width: 90%;
+  }
+  .form__modal {
+    max-width: 470px;
+    padding-right: 15px;
   }
 }
 

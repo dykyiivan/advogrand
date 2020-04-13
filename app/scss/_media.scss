@@ -79,7 +79,6 @@
   .form {
     padding-right: 15px;
   }
- 
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -135,12 +134,16 @@
   .contact__body {
     width: 100%;
   }
-  
   .form {
     padding-right: 0;
     padding-bottom: 30px;
     max-width: 90%;
   }
+  .form__modal {
+    max-width: 470px;
+    padding-right: 15px;
+  }
+ 
 }
 
 
